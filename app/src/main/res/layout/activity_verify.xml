@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".Registration"
+    android:clipChildren="false"
+
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/Verifytxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubikbold"
+        android:text="Verify Phone"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/Registermsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="A 6-digitCode is sent to +92 302 8177969, Enter the code below"
+        app:layout_constraintLeft_toLeftOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/Verifytxt"
+        android:textSize="15sp"
+        android:gravity="center"/>
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        android:textColor="@color/textgrey"
+        app:otp_box_background="@color/lightgrey"
+        app:bar_enabled="true"
+        app:bar_height="2dp"
+        app:length="6"
+        android:fontFamily="@font/rubik"
+        app:otp_text_size="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Registermsg"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verifybtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Verify"
+        android:background="@drawable/btnbackground"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.06"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/rubikmedium"
+        app:layout_constraintLeft_toLeftOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/code"
+        />
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.97"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

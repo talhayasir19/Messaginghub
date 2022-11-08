@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/usersbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/msg_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.1"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"
+        android:src="@drawable/profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/msg_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.64"
+        android:text="Talha Yasir"
+        android:fontFamily="@font/rubikmedium"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingLeft="12dp"
+        android:layout_marginLeft="5dp"
+       app:layout_constraintRight_toLeftOf="@id/msg_time"
+        app:layout_constraintTop_toTopOf="@id/msg_image"
+        app:layout_constraintLeft_toRightOf="@id/msg_image"
+        app:layout_constraintBottom_toTopOf="@id/user_msg"/>
+    <TextView
+        android:id="@+id/user_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.64"
+        android:text="Home"
+        android:paddingLeft="12dp"
+        android:fontFamily="@font/rubik"
+        android:textColor="@color/textgrey"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/msg_username"
+        app:layout_constraintBottom_toBottomOf="@id/msg_image"
+        app:layout_constraintLeft_toRightOf="@id/msg_image"
+        app:layout_constraintTop_toBottomOf="@id/msg_username"/>
+    <TextView
+        android:id="@+id/msg_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.2"
+        android:textAlignment="center"
+        android:fontFamily="@font/rubikmedium"
+        android:textColor="@color/textgrey"
+        android:textSize="11sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/msg_username"
+        app:layout_constraintBottom_toBottomOf="@id/msg_username"/>
+
+    <TextView
+        android:id="@+id/unread_count"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#1fd874"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/user_msg"
+        app:layout_constraintLeft_toLeftOf="@id/msg_time"
+        app:layout_constraintRight_toRightOf="@id/msg_time" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "916200867598",
+    "project_id": "messaginghub-e1999",
+    "storage_bucket": "messaginghub-e1999.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916200867598:android:601350c8139744655b795f",
+        "android_client_info": {
+          "package_name": "com.example.casian2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916200867598-r47eeun689td04bejatg4fjijchsc18d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG4N66gdqXkfujhfQpPK-3uiNakf1A-So"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916200867598-r47eeun689td04bejatg4fjijchsc18d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916200867598:android:b3907de6f6c9c63b5b795f",
+        "android_client_info": {
+          "package_name": "com.example.messaginghub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916200867598-s90c6q0v3ialb4tpnr7g3q6trl8gbt95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.messaginghub",
+            "certificate_hash": "f03ac414c52eb918ecd1bbce7a88f26eb10b0f36"
+          }
+        },
+        {
+          "client_id": "916200867598-r47eeun689td04bejatg4fjijchsc18d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG4N66gdqXkfujhfQpPK-3uiNakf1A-So"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916200867598-r47eeun689td04bejatg4fjijchsc18d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

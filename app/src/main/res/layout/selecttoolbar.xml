@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/Sl_backbutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/backbutton"
+        android:padding="3dp"
+        android:background="@drawable/usersbackground"
+        app:layout_constraintWidth_percent="0.08"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/Sl_msgcount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintWidth_percent="0.08"
+        android:text="1"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:fontFamily="@font/rubikmedium"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/Sl_backbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+        android:id="@+id/Sl_copy"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintWidth_percent="0.12"
+        android:padding="12dp"
+        android:background="@drawable/usersbackground"
+        android:src="@drawable/copy"
+        app:layout_constraintRight_toLeftOf="@id/Sl_delete"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/Sl_delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintWidth_percent="0.12"
+        android:padding="10dp"
+        android:background="@drawable/usersbackground"
+        android:src="@drawable/delete"
+        app:layout_constraintRight_toLeftOf="@id/Sl_forward"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/Sl_forward"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintWidth_percent="0.12"
+        android:padding="10dp"
+        android:background="@drawable/usersbackground"
+        android:src="@drawable/forward"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

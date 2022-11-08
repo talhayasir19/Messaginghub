@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/backbutton"
+            android:padding="4dp"
+                android:background="@drawable/usersbackground"
+            app:layout_constraintWidth_percent="0.08"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintWidth_percent="0.12"
+            android:padding="2dp"
+            android:src="@drawable/profile"
+            app:layout_constraintLeft_toRightOf="@id/backbutton"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/chat_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talha Yasir"
+            android:textColor="@color/textgrey"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/rubikmedium"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintWidth_percent="0.3"
+            app:layout_constraintBottom_toTopOf="@id/user_status"
+            app:layout_constraintLeft_toRightOf="@id/chat_image"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/user_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textSize="10sp"
+            android:paddingLeft="5dp"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/lightgrey"
+            android:paddingBottom="8dp"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintWidth_percent="0.3"
+            app:layout_constraintLeft_toLeftOf="@id/chat_username"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chat_username"/>
+        <ImageView
+            android:id="@+id/chat_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintWidth_percent="0.1"
+            android:padding="6dp"
+            android:background="@drawable/usersbackground"
+            android:src="@drawable/settings"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
